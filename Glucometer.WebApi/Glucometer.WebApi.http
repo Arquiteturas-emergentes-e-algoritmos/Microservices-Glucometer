@@ -1,0 +1,6 @@
+@Glucometer.WebApi_HostAddress = http://localhost:5187
+
+GET {{Glucometer.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
