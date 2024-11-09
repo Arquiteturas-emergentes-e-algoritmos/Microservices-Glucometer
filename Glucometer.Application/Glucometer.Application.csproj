@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Glucometer.Domain\Glucometer.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
