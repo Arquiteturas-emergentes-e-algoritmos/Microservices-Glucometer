@@ -20,6 +20,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Glucometer.Application\Glucometer.Application.csproj" />
     <ProjectReference Include="..\Glucometer.Domain\Glucometer.Domain.csproj" />
+    <ProjectReference Include="..\Glucometer.Persistence\Glucometer.Persistence.csproj" />
+    <ProjectReference Include="..\Glucometer.WebApi\Glucometer.WebApi.csproj" />
   </ItemGroup>
 
   <ItemGroup>
