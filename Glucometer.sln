@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glucometer.WebApi", "Glucometer.WebApi\Glucometer.WebApi.csproj", "{EA8A8AE7-20DB-4B55-A38D-A46D789CB052}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glucometer.WebApi", "Glucometer.WebApi\Glucometer.WebApi.csproj", "{EA8A8AE7-20DB-4B55-A38D-A46D789CB052}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glucometer.Domain", "Glucometer.Domain\Glucometer.Domain.csproj", "{7088136A-C305-4BE6-84B4-F060F7405194}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glucometer.Domain", "Glucometer.Domain\Glucometer.Domain.csproj", "{7088136A-C305-4BE6-84B4-F060F7405194}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glucometer.Application", "Glucometer.Application\Glucometer.Application.csproj", "{A820400E-BBDD-4749-8552-8A21B5426A87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glucometer.Application", "Glucometer.Application\Glucometer.Application.csproj", "{A820400E-BBDD-4749-8552-8A21B5426A87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glucometer.Persistence", "Glucometer.Persistence\Glucometer.Persistence.csproj", "{D465DE27-B2B7-4E75-A41A-4CB2FE735B03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glucometer.Persistence", "Glucometer.Persistence\Glucometer.Persistence.csproj", "{D465DE27-B2B7-4E75-A41A-4CB2FE735B03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glucometer.Tests", "Glucometer.Tests\Glucometer.Tests.csproj", "{6211386E-FA82-4F77-9582-BBCD13C38A56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroservicesGlucometer.Tests", "Glucometer.Tests\MicroservicesGlucometer.Tests.csproj", "{6211386E-FA82-4F77-9582-BBCD13C38A56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
