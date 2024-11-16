@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glucometer.Application", "G
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glucometer.Persistence", "Glucometer.Persistence\Glucometer.Persistence.csproj", "{D465DE27-B2B7-4E75-A41A-4CB2FE735B03}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroservicesGlucometer.Tests", "Glucometer.Tests\MicroservicesGlucometer.Tests.csproj", "{6211386E-FA82-4F77-9582-BBCD13C38A56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glucometer.Tests", "Glucometer.Tests\Glucometer.Tests.csproj", "{6211386E-FA82-4F77-9582-BBCD13C38A56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
