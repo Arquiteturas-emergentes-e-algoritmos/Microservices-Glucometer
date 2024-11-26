@@ -9,8 +9,8 @@ using Moq;
 [TestClass]
 public class GlucometerServiceTests
 {
-    private Mock<IGlucometerRepository> _mockRepository;
-    private GlucometerService _glucometerService;
+    private Mock<IGlucometerRepository> _mockRepository = null!;
+    private GlucometerService _glucometerService = null!;
 
     [TestInitialize]
     public void Setup()

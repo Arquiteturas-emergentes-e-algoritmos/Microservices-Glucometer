@@ -8,6 +8,15 @@ namespace Glucometer.WebApi.Controllers;
 [Route("v1/glucometer")]
 public class GlucometerController : ControllerBase
 {
+
+    [Route("healthcheck")]
+    [HttpPost]
+    [ProducesResponseType(typeof(object), StatusCodes.Status200OK)]
+    public IActionResult PostAddMedication()
+    {
+        return Ok("Alive");
+    }
+
     [Route("")]
     [HttpPost]
     [ProducesResponseType(typeof(object), StatusCodes.Status200OK)]
@@ -69,7 +78,7 @@ public class GlucometerController : ControllerBase
         }
     }
 
-    [Route("{Id}")]
+    [Route("")]
     [HttpDelete]
     [ProducesResponseType(typeof(object), StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(object), StatusCodes.Status400BadRequest)]
