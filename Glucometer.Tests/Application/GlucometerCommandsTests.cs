@@ -14,7 +14,7 @@ public class GlucometerCommandTests
     {
         var command = new AddTestCommand
         {
-            GlucometerId = Guid.Parse(glucometerId),
+            UserId = Guid.Parse(glucometerId),
             Value = (ushort)value,
             Time = DateTime.Parse(time)
         };
@@ -31,7 +31,7 @@ public class GlucometerCommandTests
     {
         var command = new DeleteTestCommand
         {
-            GlucometerId = Guid.NewGuid(),
+            UserId = Guid.NewGuid(),
             TestId = Guid.Parse(testId)
         };
 
@@ -50,7 +50,7 @@ public class GlucometerCommandTests
         var glucoseTest = new GlucoseTest { Value = (ushort)value, Time = DateTime.Parse(time) };
         var command = new UpdateTestCommand
         {
-            GlucometerId = Guid.Parse(glucometerId),
+            UserId = Guid.Parse(glucometerId),
             GlucoseTest = glucoseTest
         };
 

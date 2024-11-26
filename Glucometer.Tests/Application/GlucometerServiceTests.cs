@@ -24,7 +24,7 @@ public class GlucometerServiceTests
     {
         // Arrange
         var glucometerId = Guid.NewGuid();
-        var command = new AddTestCommand { GlucometerId = glucometerId, Value = 100, Time = DateTime.Now };
+        var command = new AddTestCommand { UserId = glucometerId, Value = 100, Time = DateTime.Now };
         var glucometer = new Glucometer
         {
             Id = glucometerId
@@ -44,7 +44,7 @@ public class GlucometerServiceTests
     {
         // Arrange
         var glucometerId = Guid.NewGuid();
-        var command = new GetGlucometerCommand { GlucometerId = glucometerId };
+        var command = new GetGlucometerCommand { UserId = glucometerId };
         var glucometer = new Glucometer
         {
             Id = glucometerId
@@ -65,7 +65,7 @@ public class GlucometerServiceTests
         // Arrange
         var glucometerId = Guid.NewGuid();
         var glucoseTest = new GlucoseTest(120, DateTime.Now);
-        var command = new UpdateTestCommand { GlucometerId = glucometerId, GlucoseTest = glucoseTest };
+        var command = new UpdateTestCommand { UserId = glucometerId, GlucoseTest = glucoseTest };
         var glucometer = new Glucometer
         {
             Id = glucometerId
@@ -86,7 +86,7 @@ public class GlucometerServiceTests
         // Arrange
         var glucometerId = Guid.NewGuid();
         var testId = Guid.NewGuid();
-        var command = new DeleteTestCommand { GlucometerId = glucometerId, TestId = testId };
+        var command = new DeleteTestCommand { UserId = glucometerId, TestId = testId };
         var glucometer = new Glucometer
         {
             Id = glucometerId

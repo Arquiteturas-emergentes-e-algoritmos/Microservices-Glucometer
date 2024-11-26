@@ -12,7 +12,7 @@ public class GlucometerService(IGlucometerRepository glucometerRepository) : Bas
     public CommandResponse Handle(AddTestCommand command)
     {
         GlucoseTest test = new(command.Value, command.Time);
-        var glucometer = _glucometerRepository.GetById(command.GlucometerId);
+        var glucometer = _glucometerRepository.GetById(command.UserId);
         glucometer.AddTest(test);
         _glucometerRepository.Update(glucometer);
         return new CommandResponse(null, 200);
@@ -20,19 +20,19 @@ public class GlucometerService(IGlucometerRepository glucometerRepository) : Bas
 
     public CommandResponse Handle(GetGlucometerCommand command)
     {
-        return new CommandResponse(_glucometerRepository.GetById(command.GlucometerId), 200);
+        return new CommandResponse(_glucometerRepository.GetById(command.UserId), 200);
     }
 
     public CommandResponse Handle(UpdateTestCommand command)
     {
-        var glucometer = _glucometerRepository.GetById(command.GlucometerId);
+        var glucometer = _glucometerRepository.GetById(command.UserId);
         glucometer.UpdateTest(command.GlucoseTest);
         _glucometerRepository.Update(glucometer);
         return new CommandResponse(null, 200);
     }
     public CommandResponse Handle(DeleteTestCommand command)
     {
-        var glucometer = _glucometerRepository.GetById(command.GlucometerId);
+        var glucometer = _glucometerRepository.GetById(command.UserId);
         glucometer.DeleteTest(command.TestId);
         _glucometerRepository.Update(glucometer);
         return new CommandResponse(null, 200);

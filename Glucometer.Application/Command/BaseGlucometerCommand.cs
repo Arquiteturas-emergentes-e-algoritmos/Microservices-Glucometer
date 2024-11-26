@@ -4,11 +4,11 @@ namespace Glucometer.Application.Command;
 
 public abstract class BaseGlucometerCommand : ICommandRequest
 {
-    public Guid GlucometerId { get; set; } = Guid.Empty;
+    public Guid UserId { get; set; } = Guid.Empty;
 
     public virtual bool Validate()
     {
-        if (GlucometerId == Guid.Empty) return false;
+        if (UserId == Guid.Empty) return false;
         return true;
     }
 }
