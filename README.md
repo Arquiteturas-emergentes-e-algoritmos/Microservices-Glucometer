@@ -29,11 +29,40 @@ Ao submeter esta arquitetura a prova de conceito, aliada a arquitetura onion, fo
 
 Uma propriedade que ficou bastante evidente durante o processo de desenvolvimento dos microserviços foi a manutenabilidade de cada modulo, na primeira submissão do código ao sonar, foram acusados pouquíssimos erros, e os que foram acusados, foram fáceis de serem resolvidos.
 
+## 🧅 Arquitetura Onion
+A **Onion Architecture** é uma abordagem para sistemas corporativos complexos, focada na **separação de responsabilidades** e na redução do **acoplamento** entre componentes.
+### Principais conceitos
+1. **Domínio no centro**:  
+   O núcleo da aplicação é o **Domain Model**, responsável pela lógica de negócios e regras. Camadas externas, como UI e infraestrutura, não afetam o núcleo.
+2. **Infraestrutura externa**:  
+   Banco de dados e outros sistemas externos são acessados apenas por meio de interfaces definidas no núcleo, facilitando mudanças.
+3. **Redução de acoplamento**:  
+   Todas as dependências apontam para o núcleo, evitando que mudanças em detalhes externos impactem a lógica central.
+4. **Princípio da inversão de dependência**:  
+   O núcleo define interfaces e depende de implementações fornecidas pelas camadas externas, promovendo flexibilidade e manutenção.
+
+## 🪐 SonarQube
+A figura 2 apresenta os dados coletados pelo SonarQube referentes a esta arquitetura, vale ressaltar que devido a configurações do sonar, não foi possível coletar a cobertura dos testes automaticamente.
+
+![Arquitetura Microserviços](img/SonarGlucometer.PNG)  
+*Figura 2: SonarQube. Fonte:Autor*  
+
 ## 📖 Referências
+
+1. Fowler, M. Microservices Guide. *martinfowler.com*. Disponível em: [https://martinfowler.com/microservices/](https://martinfowler.com/microservices/).
+
+2. Li, S., Zhang, H., Jia, Z., Zhong, C., Zhang, C., Shan, Z., Shen, J., & Babar, M. A. (2021). Understanding and addressing quality attributes of microservices architecture: A Systematic literature review. *Information and Software Technology, 131*, 106449. DOI: [10.1016/j.infsof.2020.106449](https://doi.org/10.1016/j.infsof.2020.106449).
+
+3. Dmitry, N., & Sneps-Sneppe, M. (2014). On Micro-Services Architecture. *International Journal of Open Information Technologies, 2*(9), 24–27.
+
+4. Palamarchuk, Y. A. (2022). Methods of building microservice architecture of e-learning systems. *Інформаційні технології та комп'ютерна інженерія*, (1), 43–54.
+
+5. Palermo, J. (2008, julho). The Onion Architecture (Part 1). *Programming with Palermo*. Disponível em: [https://jeffreypalermo.com/2008/07/the-onion-architecture-part-1/?source=post_page-----551f460c3b2c--------------------------------](https://jeffreypalermo.com/2008/07/the-onion-architecture-part-1/?source=post_page-----551f460c3b2c--------------------------------).
 
 ## 📅 Versionamento
 
 | Versão |    Data    |         Descrição          |  Autor(es)  |
 | :----: | :--------: | :------------------------: | :---------: |
 | `1.0`  | 04/12/2024 | Criação de documento | Kauã |
+| `1.1` | 19/12/2024| Adição do sonar e das referências | Kauã| 
 
